@@ -55,14 +55,14 @@
     </div>
 
   </header>
-  <form action="">
+  <form>
     <div class="container ">
       <h2 class="text-center text-light fw-bold mb-3"> Inserisci i dati</h2>
       <div class="row gy-2 mb-3 bg-body-tertiary border-1 rounded-2 py-3">
         <!-- input -->
         <div class="col-12 col-md-6 col-lg-4">
           <div class="form-floating">
-            <input type="text" class="form-control" id="name" placeholder="Inserisci il tuo nome" value="" name="">
+            <input type="text" class="form-control" id="name" placeholder="Inserisci il tuo nome" value="" name="name">
             <label for="name">Inserisci il tuo nome</label>
           </div>
         </div>
@@ -70,16 +70,16 @@
         <div class="col-12 col-md-6 col-lg-4">
           <div class="form-floating">
             <input type="number" class="form-control" id="tripKm" placeholder="Inserisci i chilometri da percorrere"
-              value="" name="">
+              value="" name="tripKm">
             <label for="tripKm">Inserisci i chilometri da percorrere</label>
           </div>
         </div>
         <!-- select -->
         <div class="col-12 col-md-6 col-lg-4">
-          <select class="form-select h-100" id="age" aria-label="Default select example" value="" name="">
-            <option>Scegli fascia età</option>
-            <option value="over17">da 18 a 65 anni</option>
+          <select class="form-select h-100" id="age" aria-label="Default select example" name="age">
+            <option>Scegli fascia di età</option>
             <option value="under18">da 0 a 17 anni</option>
+            <option value="over17">da 18 a 65 anni</option>
             <option value="over65">da 66 a 120 anni</option>
           </select>
         </div>
