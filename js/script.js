@@ -14,8 +14,13 @@ submit.addEventListener('click', function(){
     let basePrice= unitPrice * valtripKm;
     
     if(valAge === 'under18'){
-     finalPrice= basePrice * discountMin;
-     console.log('il prezzo del biglietto è ', finalPrice.toFixed(2));
+        finalPrice= basePrice * discountMin;
+        console.log('il prezzo del biglietto è ', finalPrice.toFixed(2));
+    } else if (valAge === 'over65'){
+        finalPrice= basePrice * discountOver;
+        console.log('il prezzo del biglietto è ', finalPrice.toFixed(2));
+    } else{
+        console.log('il prezzo del biglietto è ', basePrice.toFixed(2));
     }
 
 })
