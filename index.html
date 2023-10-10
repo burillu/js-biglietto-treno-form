@@ -15,10 +15,51 @@
   <link rel="stylesheet" href="css/style.css">
     <title>Biglietto-Facile</title>
 </head>
-<body>
+<body class="bg-danger-subtle">
+  <header class="bg-body-tertiary shadow-sm mb-3">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><strong class="text-info">Biglietto-Facile</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    </div>
+    
+  </header>
   <form action="">
     <div class="container">
-    <div class="row">
+    <div class="row gy-2 mb-3">
       <!-- input -->
       <div class="col-12 col-md-6 col-lg-4">
         <div class="form-floating">
@@ -43,20 +84,20 @@
         </select>
       </div>
       <!-- submit / clear -->
-      <div class="col-3">
+      <div class="col-12">
         <button class="btn btn-primary" type="button"> Procedi</button>
         <button class="btn btn-warning" type="reset"> Pulisci i campi</button>
       </div>
     </div>
-    <div class="row" id="ticketGen">
+    <div class="row gy-2" id="ticketGen">
       <!-- nome -->
-      <div class="col border-danger bg-info-subtle"></div>
+      <div class="col name-psg border-danger bg-info-subtle"></div>
       <!-- carrozza -->
-      <div class="col"></div>
+      <div class="col num-ticket"></div>
       <!-- posto -->
-      <div class="col"></div>
+      <div class="col seat"></div>
       <!-- prezzo -->
-      <div class="col final-price"></div>
+      <div class="col-12 col-md final-price"></div>
     </div>
   </div>
   </form>
