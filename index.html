@@ -1,107 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Michele Ebau">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Michele Ebau">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
-    <title>Biglietto-Facile</title>
+  <title>Biglietto-Facile</title>
 </head>
+
 <body class="bg-danger-subtle">
   <header class="bg-body-tertiary shadow-sm mb-3">
     <div class="container">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><strong class="text-info">Biglietto-Facile</strong></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><strong class="text-info">Biglietto-Facile</strong></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
     </div>
-    
+
   </header>
   <form action="">
-    <div class="container">
-    <div class="row gy-2 mb-3">
-      <!-- input -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="form-floating">
-          <input type="text" class="form-control" id="name" placeholder="" value="" name="">
-          <label for="name">Inserisci il tuo nome</label>
+    <div class="container ">
+      <h2 class="text-center text-light fw-bold mb-3"> Inserisci i dati</h2>
+      <div class="row gy-2 mb-3 bg-body-tertiary border-1 rounded-2 py-3">
+        <!-- input -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="form-floating">
+            <input type="text" class="form-control" id="name" placeholder="Inserisci il tuo nome" value="" name="">
+            <label for="name">Inserisci il tuo nome</label>
+          </div>
+        </div>
+        <!-- input -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="form-floating">
+            <input type="text" class="form-control" id="tripKm" placeholder="Inserisci i chilometri da percorrere" value="" name="">
+            <label for="tripKm">Inserisci i chilometri da percorrere</label>
+          </div>
+        </div>
+        <!-- select -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <select class="form-select h-100" id="age" aria-label="Default select example" value="" name="">
+            <option>Scegli fascia età</option>
+            <option value="over17">da 18 a 65 anni</option>
+            <option value="under18">da 0 a 17 anni</option>
+            <option value="over65">da 66 a 120 anni</option>
+          </select>
+        </div>
+        <!-- submit / clear -->
+        <div class="col-12">
+          <button class="btn btn-info" type="button"> Procedi</button>
+          <button class="btn btn-outline-info" type="reset"> Pulisci i campi</button>
         </div>
       </div>
-      <!-- input -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="form-floating">
-          <input type="text" class="form-control" id="tripKm" placeholder="" value="" name="">
-          <label for="tripKm">Inserisci i chilometri da percorrere</label>
+      <div class="container-fluid d-none">
+        <h2 class="text-center text-light fw-bold mb-3"> Il tuo <span class="text-info">Biglietto-Facile</span></h2>
+        <div class="row bg-body-tertiary border-1 rounded-2">
+          <div class="col">
+            <div class="container-fluid py-2">
+              <div class="row gy-2 text-center" id="ticketGen">
+                <!-- nome -->
+                <div class="col-12 col-md bg-info-subtle">
+                  <div class="border-black"><span class="border-black p-2 border-1 border-bottom">Nome</span></div>
+                  <div class="name-psg text-uppercase fw-bold m-3"></div>
+                </div>
+                <!-- carrozza -->
+                <div class="col-12 col-md ">
+                  <div class="border-black"><span class="border-black p-2 border-1 border-bottom">Biglietto</span></div>
+                  <div class="num-ticket text-uppercase fw-bold m-3"></div>
+                </div>
+                <!-- posto -->
+                <div class="col-12 col-md-auto">
+                  <div class="border-black"><span class="border-black p-2 border-1 border-bottom">Posto</span></div>
+                  <div class="seat text-uppercase fw-bold m-3"></div>
+                </div>
+                <!-- prezzo -->
+                <div class="col-12 col-md-auto ">
+                  <div class="border-black"><span class="border-black p-2 border-1 border-bottom">Prezzo</span></div>
+                  <div class="final-price text-uppercase fw-bold m-3"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
-      <!-- select -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <select class="form-select" id="age" aria-label="Default select example" value="" name="">
-          <option >Scegli fascia età</option>
-          <option value="over17">da 18 a 65 anni</option>
-          <option value="under18">da 0 a 17 anni</option>
-          <option value="over65">da 66 a 120 anni</option>
-        </select>
-      </div>
-      <!-- submit / clear -->
-      <div class="col-12">
-        <button class="btn btn-primary" type="button"> Procedi</button>
-        <button class="btn btn-warning" type="reset"> Pulisci i campi</button>
-      </div>
+
+
     </div>
-    <div class="row gy-2" id="ticketGen">
-      <!-- nome -->
-      <div class="col name-psg border-danger bg-info-subtle"></div>
-      <!-- carrozza -->
-      <div class="col num-ticket"></div>
-      <!-- posto -->
-      <div class="col seat"></div>
-      <!-- prezzo -->
-      <div class="col-12 col-md final-price"></div>
-    </div>
-  </div>
   </form>
-  
-    <script src="js/script.js"></script>
+
+  <script src="js/script.js"></script>
 </body>
+
 </html>

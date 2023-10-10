@@ -7,6 +7,7 @@ const divFinalPrice = document.querySelector('.final-price');
 const namePsg = document.querySelector('.name-psg');
 const numTicket = document.querySelector('.num-ticket');
 const seat = document.querySelector('.seat');
+const divDnone = document.querySelector('div.d-none');
 
 // console.log(submit);
 const unitPrice = 0.21;
@@ -21,21 +22,23 @@ submit.addEventListener('click', function(){
     
     if(valAge === 'under18'){
         finalPrice= basePrice * discountMin;
-        divFinalPrice.innerHTML= `Il prezzo del tuo biglietto è: ${finalPrice.toFixed(2)} €`;
+        divFinalPrice.innerHTML= `${finalPrice.toFixed(2)} €`;
         console.log('il prezzo del biglietto è ', finalPrice.toFixed(2));
     } else if (valAge === 'over65'){
         finalPrice= basePrice * discountOver;
-        divFinalPrice.innerHTML= `Il prezzo del tuo biglietto è: ${finalPrice.toFixed(2)} €`
+        divFinalPrice.innerHTML= `${finalPrice.toFixed(2)} €`
         console.log('il prezzo del biglietto è ', finalPrice.toFixed(2));
     } else{
-        divFinalPrice.innerHTML= `Il prezzo del tuo biglietto è: ${basePrice.toFixed(2)} €`
+        divFinalPrice.innerHTML= `${basePrice.toFixed(2)} €`
         console.log('il prezzo del biglietto è ', basePrice.toFixed(2));
     } 
-    namePsg.innerHTML= ` ${nome.value}`
-    numTicket.innerHTML= ` 
-    carrozza numero: ${rndNumb(0, 9)} <br>
-    Biglietto numero: ${rndNumb(10000, 25000)}`
-    seat.innerHTML = `A`
+    namePsg.innerHTML= ` ${nome.value}`;
+    numTicket.innerHTML= `      
+    ${rndNumb(10000, 25000)}`;
+    seat.innerHTML = `A <br>
+    Carrozza: ${rndNumb(0, 9)}`;
+    divDnone.classList.remove('d-none');
+
 
 })
 
