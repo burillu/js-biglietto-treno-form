@@ -2,6 +2,9 @@
 const tripkm = document.getElementById('tripKm');
 const age = document.getElementById('age');
 const submit = document.querySelector('.btn-primary');
+const name = document.getElementById ('name');
+const divFinalPrice = document.querySelector('.final-price');
+
 // console.log(submit);
 const unitPrice = 0.21;
 const discountMin = 1 - 20/100;
@@ -15,13 +18,16 @@ submit.addEventListener('click', function(){
     
     if(valAge === 'under18'){
         finalPrice= basePrice * discountMin;
+        divFinalPrice.innerHTML= `Il prezzo del tuo biglietto è: ${finalPrice.toFixed(2)} €`;
         console.log('il prezzo del biglietto è ', finalPrice.toFixed(2));
     } else if (valAge === 'over65'){
         finalPrice= basePrice * discountOver;
+        divFinalPrice.innerHTML= `Il prezzo del tuo biglietto è: ${finalPrice.toFixed(2)} €`
         console.log('il prezzo del biglietto è ', finalPrice.toFixed(2));
     } else{
+        divFinalPrice.innerHTML= `Il prezzo del tuo biglietto è: ${basePrice.toFixed(2)} €`
         console.log('il prezzo del biglietto è ', basePrice.toFixed(2));
-    }
+    } 
 
 })
 
