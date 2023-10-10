@@ -1,7 +1,7 @@
 // variables
 const tripkm = document.getElementById('tripKm');
 const age = document.getElementById('age');
-const submit = document.querySelector('.btn-primary');
+const submit = document.querySelector('.btn-info');
 const nome = document.getElementById ('name');
 const divFinalPrice = document.querySelector('.final-price');
 const namePsg = document.querySelector('.name-psg');
@@ -35,8 +35,8 @@ submit.addEventListener('click', function(){
     namePsg.innerHTML= ` ${nome.value}`;
     numTicket.innerHTML= `      
     ${rndNumb(10000, 25000)}`;
-    seat.innerHTML = `A <br>
-    Carrozza: ${rndNumb(0, 9)}`;
+    seat.innerHTML = `A - ${rndNumb(0, 50)}<br>
+    Carrozza: ${rndNumb(1, 9)}`;
     divDnone.classList.remove('d-none');
 
 

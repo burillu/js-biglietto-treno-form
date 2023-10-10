@@ -69,7 +69,8 @@
         <!-- input -->
         <div class="col-12 col-md-6 col-lg-4">
           <div class="form-floating">
-            <input type="text" class="form-control" id="tripKm" placeholder="Inserisci i chilometri da percorrere" value="" name="">
+            <input type="number" class="form-control" id="tripKm" placeholder="Inserisci i chilometri da percorrere"
+              value="" name="">
             <label for="tripKm">Inserisci i chilometri da percorrere</label>
           </div>
         </div>
@@ -88,43 +89,43 @@
           <button class="btn btn-outline-info" type="reset"> Pulisci i campi</button>
         </div>
       </div>
-      <div class="container-fluid d-none">
-        <h2 class="text-center text-light fw-bold mb-3"> Il tuo <span class="text-info">Biglietto-Facile</span></h2>
-        <div class="row bg-body-tertiary border-1 rounded-2">
-          <div class="col">
-            <div class="container-fluid py-2">
-              <div class="row gy-2 text-center" id="ticketGen">
-                <!-- nome -->
-                <div class="col-12 col-md bg-info-subtle">
-                  <div class="border-black"><span class="border-black p-2 border-1 border-bottom">Nome</span></div>
-                  <div class="name-psg text-uppercase fw-bold m-3"></div>
-                </div>
-                <!-- carrozza -->
-                <div class="col-12 col-md ">
-                  <div class="border-black"><span class="border-black p-2 border-1 border-bottom">Biglietto</span></div>
-                  <div class="num-ticket text-uppercase fw-bold m-3"></div>
-                </div>
-                <!-- posto -->
-                <div class="col-12 col-md-auto">
-                  <div class="border-black"><span class="border-black p-2 border-1 border-bottom">Posto</span></div>
-                  <div class="seat text-uppercase fw-bold m-3"></div>
-                </div>
-                <!-- prezzo -->
-                <div class="col-12 col-md-auto ">
-                  <div class="border-black"><span class="border-black p-2 border-1 border-bottom">Prezzo</span></div>
-                  <div class="final-price text-uppercase fw-bold m-3"></div>
-                </div>
-              </div>
-            </div>
 
-          </div>
-        </div>
-      </div>
 
 
     </div>
   </form>
+  <div class="container d-none">
+    <h2 class="text-center text-light fw-bold mb-3"> Il tuo <span class="text-info">Biglietto-Facile</span></h2>
+    <div class="row bg-body-tertiary border-1 rounded-2">
+      <div class="col">
+        <div class="container-fluid py-2">
+          <div class="row gy-2 text-center" id="ticketGen">
+            <!-- nome -->
+            <div class="col-12 col-md-5 bg-info-subtle">
+              <div class="border-black"><span class="border-black p-2 border-1 border-bottom">Nome</span></div>
+              <div class="name-psg text-uppercase fw-bold m-3"></div>
+            </div>
+            <!-- carrozza -->
+            <div class="col-12 col-md ">
+              <div class="border-black"><span class="border-black p-2 border-1 border-bottom">Biglietto</span></div>
+              <div class="num-ticket text-uppercase fw-bold m-3"></div>
+            </div>
+            <!-- posto -->
+            <div class="col-12 col-md">
+              <div class="border-black"><span class="border-black p-2 border-1 border-bottom">Posto</span></div>
+              <div class="seat text-uppercase fw-bold m-3"></div>
+            </div>
+            <!-- prezzo -->
+            <div class="col-12 col-md-auto ">
+              <div class="border-black"><span class="border-black p-2 border-1 border-bottom">Prezzo</span></div>
+              <div class="final-price text-uppercase fw-bold m-3"></div>
+            </div>
+          </div>
+        </div>
 
+      </div>
+    </div>
+  </div>
   <script src="js/script.js"></script>
 </body>
 
