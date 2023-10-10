@@ -2,8 +2,11 @@
 const tripkm = document.getElementById('tripKm');
 const age = document.getElementById('age');
 const submit = document.querySelector('.btn-primary');
-const name = document.getElementById ('name');
+const nome = document.getElementById ('name');
 const divFinalPrice = document.querySelector('.final-price');
+const namePsg = document.querySelector('.name-psg');
+const numTicket = document.querySelector('.num-ticket');
+const seat = document.querySelector('.seat');
 
 // console.log(submit);
 const unitPrice = 0.21;
@@ -28,6 +31,16 @@ submit.addEventListener('click', function(){
         divFinalPrice.innerHTML= `Il prezzo del tuo biglietto è: ${basePrice.toFixed(2)} €`
         console.log('il prezzo del biglietto è ', basePrice.toFixed(2));
     } 
+    namePsg.innerHTML= ` ${nome.value}`
+    numTicket.innerHTML= ` 
+    carrozza numero: ${rndNumb(0, 9)} <br>
+    Biglietto numero: ${rndNumb(10000, 25000)}`
+    seat.innerHTML = `A`
 
 })
+
+function rndNumb(min, max){
+    return Math.floor(Math.random() * (max - min)) + min;
+
+}
 
